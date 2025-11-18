@@ -1,10 +1,3 @@
-// import { NextResponse } from "next/server";
-
-// export async function GET() {
-//   return NextResponse.json({ message: "hello" });
-// }
-
-
 import { NextResponse } from "next/server";
 import { Agent, Runner, withTrace } from "@openai/agents";
 import { z } from "zod";
