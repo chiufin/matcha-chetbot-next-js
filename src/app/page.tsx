@@ -11,19 +11,19 @@ const Landing = () => {
   const features = [
     {
       icon: Leaf,
-      title: "Learn Matcha Culture",
-      description: "Discover the rich history and traditions of Japanese matcha tea ceremonies.",
+      title: "Explore Matcha Knowledge",
+      description: "Introduce me to matcha. Why is matcha so popular lately? How do I store matcha to keep it fresh?",
     },
     {
       icon: MapPin,
-      title: "Find Nearby Cafés",
-      description: "Explore hidden gems and popular matcha spots across London.",
+      title: "Find London Cafés",
+      description: "Could you recommend some matcha cafés in London? What are the best matcha spots in Maryllebone?",
     },
-    {
-      icon: MessageSquare,
-      title: "Ask Anything",
-      description: "Chat with our AI expert powered by LangChain for personalized recommendations.",
-    },
+    // {
+    //   icon: MessageSquare,
+    //   title: "Ask Anything",
+    //   description: "Chat with our AI expert powered by OpenAI Agent Kit for personalized recommendations.",
+    // },
   ];
 
   return (
@@ -60,7 +60,7 @@ const Landing = () => {
               <span className="text-primary">with AI</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Chat with our LangChain-powered Matcha expert and explore hidden gems around the city.
+              Chat with our multi-agent matcha expert and explore curated matcha spots across the city.
             </p>
             <Link href="/chat">
               <Button
@@ -72,7 +72,7 @@ const Landing = () => {
             </Link>
             <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
               <span className="opacity-60">Powered by</span>
-              <span className="font-semibold text-foreground">LangChain</span>
+              <span className="font-semibold text-foreground">OpenAI Agent Kit</span>
             </div>
           </motion.div>
 
@@ -121,7 +121,7 @@ const Landing = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -179,14 +179,6 @@ const Landing = () => {
             <div className="flex items-center gap-2 text-muted-foreground">
               {/* <span className="text-2xl">🍵</span> */}
               <span className="font-medium">© 2025 Stacccy — Crafted with calm energy and matcha.</span>
-            </div>
-            <div className="flex gap-6 text-sm text-muted-foreground">
-              <a href="https://github.com" className="hover:text-foreground transition-colors">
-                GitHub
-              </a>
-              <a href="mailto:contact@matchaknowledge.com" className="hover:text-foreground transition-colors">
-                Contact
-              </a>
             </div>
           </div>
         </div>

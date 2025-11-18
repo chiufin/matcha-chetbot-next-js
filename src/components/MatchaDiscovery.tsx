@@ -81,7 +81,7 @@ const MatchaDiscovery = () => {
 
       <div className="pt-4 border-t border-border">
         <p className="text-xs text-muted-foreground text-center">
-          Powered by <span className="font-semibold text-foreground">LangChain</span>
+          Powered by <span className="font-semibold text-foreground">OpenAI Agent Kit</span>
         </p>
       </div>
     </div>
