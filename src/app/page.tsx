@@ -89,7 +89,7 @@ const Landing = () => {
                 className="w-full h-full object-cover"
               />
             </div> */}
-            <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl p-6 shadow-elevated">
+            {/* <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl p-6 shadow-elevated">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl">
                   🍵
@@ -99,7 +99,7 @@ const Landing = () => {
                   <div className="text-sm text-muted-foreground">Across London</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>
