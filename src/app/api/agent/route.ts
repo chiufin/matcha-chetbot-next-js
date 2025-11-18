@@ -129,11 +129,11 @@ export async function POST(request: Request) {
     }
   });
 
-  // type WorkflowInput = { input_as_text: string };
+  type WorkflowInput = { input_as_text: string };
 
 
   // Main code entrypoint
-  const runWorkflow = async (workflow) => {
+  const runWorkflow = async (workflow: WorkflowInput) => {
     return await withTrace("Matcha Chat Website", async () => {
       const state = {
 

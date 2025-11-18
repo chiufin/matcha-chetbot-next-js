@@ -52,11 +52,11 @@ const MatchaDiscovery = () => {
           >
             <Card className="overflow-hidden border-border hover:shadow-elevated transition-shadow duration-300 cursor-pointer group">
               <div className="aspect-video overflow-hidden">
-                <img
+                {/* <img
                   src={cafe.image}
                   alt={cafe.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                /> */}
               </div>
               <CardContent className="p-4">
                 <div className="flex items-start justify-between mb-2">
