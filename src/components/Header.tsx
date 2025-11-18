@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -17,14 +16,6 @@ const Header = () => {
               <span className="text-foreground">Matcha Knowledge</span>
             </motion.div>
           </Link>
-
-          <div className="flex-1 max-w-2xl relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input
-              placeholder="Ask about matcha or London cafés..."
-              className="pl-10 bg-background/50 border-border rounded-full focus-visible:ring-primary"
-            />
-          </div>
         </div>
       </div>
     </header>
