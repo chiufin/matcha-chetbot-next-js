@@ -1,0 +1,2 @@
+export const areas = ['Marylebone', 'Shoreditch', 'Soho', 'Covent Garden', 'Notting Hill', 'Camden Town', 'Chelsea', 'Clerkenwell', 'King’s Cross'];
+export const filterBarAreas = ['All Areas', ...areas];
