@@ -17,7 +17,7 @@ const Landing = () => {
     {
       icon: MapPin,
       title: "Find London Cafés",
-      description: "Could you recommend some matcha cafés in London? What are the best matcha spots in Maryllebone?",
+      description: "Could you recommend some matcha cafés in London? What are the best matcha spots in Marylebone?",
     },
     // {
     //   icon: MessageSquare,
