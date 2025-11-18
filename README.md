@@ -1,8 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+https://matcha-chatbot.stacccy.dev/
+
+## 🚀 Multi-Agent Matcha AI Web App
+A multi-agent AI web app powered by OpenAI Agent Kit, showcasing clean domain separation between a matcha knowledge agent and a London café discovery agent.
+
+🍵 1. Matcha Knowledge Agent
+
+    Model: gpt-5-nano + minimal RAG (matcha knowledge base) (@todo)
+
+    Example
+    User: Why is matcha so popular lately?
+    Answer:
+    Matcha’s popularity comes from its smooth flavor, energizing caffeine, and the vibe of ancient tea rituals—plus it’s versatile for lattes, smoothies, and baking.
+
+☕ 2. London Café Discovery Agent
+    
+    Model: gpt-5-nano + db
+
+    Uses our internal café database to generate structured recommendation cards (name, vibe, rating). (@todo: the UI formats it into cards)
+
+    Example
+    User: What are the best matcha spots in Marylebone?
+    Answer:
+    Here are some great matcha spots in Marylebone:
+
+    1. Chazunoya Matcha Bar
+       • Area: Marylebone
+       • Vibe: Calm, minimalist Japanese-inspired café with seasonal sweets
+       • Google rating: ~4.4–4.6
+
+    2. Cha Cha Matcha 
+       • Area: Near Bond Street / Marble Arch
+       • Vibe: Bright, playful, modern matcha drinks
+       • Google rating: ~4.2–4.5
+
+    3. TEANZ
+       • Area: Marylebone / Fitzrovia
+       • Vibe: Quiet, tea-focused café offering ceremonial-grade matcha
+       • Google rating: ~4.3–4.5
+
 
 ## Getting Started
 
-First, run the development server:
+Please set up the environment variables before running the app.
+```.env
+OPENAI_API_KEY
+```
+
 
 ```bash
 npm run dev
@@ -14,23 +58,13 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+create-next-app
 
-## Learn More
+react
 
-To learn more about Next.js, take a look at the following resources:
+next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[openai agent](https://platform.openai.com/docs/guides/agent-builder) 
