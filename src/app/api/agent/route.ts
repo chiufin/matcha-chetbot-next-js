@@ -196,7 +196,11 @@ export async function POST(request: Request) {
     });
   }
 
-  const message = "what is matcha?";
+  const body = await request.json();   // <--- 接 JSON Body
+
+  const { message } = body;
+
+  // const message = "what is matcha?";
   const result = await runWorkflow({ input_as_text: message });
   return NextResponse.json({ reply: result });
 }
