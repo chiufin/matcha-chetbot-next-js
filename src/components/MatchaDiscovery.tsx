@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Star } from "lucide-react";
-// import cafe1 from "@/assets/cafe-1.jpg";
-// import cafe2 from "@/assets/cafe-2.jpg";
-// import cafe3 from "@/assets/cafe-3.jpg";
+import Image from 'next/image';
+// import cafe1 from "/vercel.svg";
+// import cafe2 from "/vercel.svg";
+// import cafe3 from "/vercel.svg";
 
 const cafes = [
   {
@@ -52,11 +53,14 @@ const MatchaDiscovery = () => {
           >
             <Card className="overflow-hidden border-border hover:shadow-elevated transition-shadow duration-300 cursor-pointer group">
               <div className="aspect-video overflow-hidden">
-                {/* <img
-                  src={cafe.image}
+                <Image
+                  src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=800&q=80"
                   alt={cafe.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                /> */}
+                  width={140}
+                  height={140}
+                />
+               
               </div>
               <CardContent className="p-4">
                 <div className="flex items-start justify-between mb-2">
